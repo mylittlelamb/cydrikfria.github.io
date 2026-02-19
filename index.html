@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">My Portfolio Website!</a>
+        <nav>
+            <a href="#home" class="active">Home</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
+            <a href="#projects">Projects</a>
+            <a href="#resume">Resume</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <button class="menu-btn" id="menuBtn" aria-label="Open menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </header>
+    <section id="home" class="home">
+        <div class="home-img">
+            <img src="images/IMG_5882.jpeg" alt="Profile photo">
+        </div>
+        <div class="home-content">
+            <h1>Hi, It's <span>Cydrik</span></h1>
+            <h3 class="typing-text"> <span></span></h3>
+            <p>Motivated software development student. I'm currently seeking an internship where I can apply what I've learned while gaining real-world experience. Although I'm early in my tech journey, my work experience has helped me develop responsibility, independence, and strong teamwork skills, including being trusted to manage store operations alone during shifts. I'm eager to keep learning, contribute to meaningful projects, and grow as part of a professional team. </p>
+        </div>
+    </section>
+    <section id="skills" class="skills">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-box">
+            <p><strong>Programming Languages:</strong> Java, Python</p>
+            <p><strong>Web Development:</strong> HTML, CSS, JavaScript (Front-end fundamentals)</p>
+            <p><strong>Database & Data:</strong> SQL, Database fundamentals, Data modeling (basic)</p>
+            <p><strong>Operating Systems & Tools:</strong> Linux (Ubuntu/Mint), VS Code, IntelliJ IDEA</p>
+            <p><strong>Core Concepts:</strong> Object-Oriented Programming (OOP), Problem Solving, Debugging</p>
+        </div>
+    </section>
+    <section id="education" class="education">
+        <h2 class="section-title">Education</h2>
+        <div class="edu-box">
+            <div class="edu-header">
+            <div>
+                <h3>Ontario College Advanced Diploma</h3>
+                <p>Mohawk College, Hamilton, ON</p>
+            </div>
+            <span class="edu-date">September 2023 – Present</span>
+            </div>
+
+            <ul>
+            <li>Focus on programming fundamentals, object-oriented programming, web development, databases, and software design</li>
+            <li>Hands-on experience with Java, Python, JavaScript, SQL, HTML, CSS, and Linux through labs and projects</li>
+            <li>Worked with UML diagrams, debugging, testing, and version control concepts in team and individual assignments</li>
+            </ul>
+        </div>
+    </section>
+    <section id="projects" class="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+            <h3>Hamilton Food Spots Map</h3>
+            <p>Interactive Google Maps app with place markers, categories, and directions.</p>
+            <div class="project-links">
+                <a href="#" class="project-btn">GitHub</a>
+                <a href="#" class="project-btn">Live Demo</a>
+            </div>
+            </div>
+            <div class="project-card">
+            <h3>Flog.io Inventory Game</h3>
+            <p>PHP/JS/Bootstrap project using JSON/CSV to manage shop inventory and gameplay.</p>
+            <div class="project-links">
+                <a href="#" class="project-btn">GitHub</a>
+                <a href="#" class="project-btn">Details</a>
+            </div>
+            </div>
+
+            <div class="project-card">
+            <h3>Doctor Who Database Viewer</h3>
+            <p>C# Windows Forms app connected to SQL database for browsing Doctors/Episodes.</p>
+            <div class="project-links">
+                <a href="#" class="project-btn">GitHub</a>
+                <a href="#" class="project-btn">Details</a>
+            </div>
+            </div>
+        </div>
+    </section>
+    <section id="resume" class="resume">
+        <h2 class="section-title">Resume</h2>
+        <div class="resume-box">
+            <p>You can download my resume here:</p>
+            <a class="btn" href="resume.pdf" download>Download Resume (PDF)</a>
+
+            <p class="resume-note">
+            Prefer online? View it on 
+            <a href="#" class="inline-link">Google Drive</a> or <a href="#" class="inline-link">LinkedIn</a>.
+            </p>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-discord"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <a href="mailto:cydrikfria@email.com" class="btn">Hire me</a>
+    </section>
+
+    <script>
+  const menuBtn = document.getElementById("menuBtn");
+  const nav = document.querySelector("header nav");
+
+  menuBtn.addEventListener("click", () => {
+    nav.classList.toggle("active");
+  });
+</script>
+</body>
+</html>
